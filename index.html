@@ -1,1 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Rare Nexus TCG — sua loja de Pokémon TCG."
+    >
+
+    <title>Rare Nexus TCG | Pokémon TCG</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
+
+    <header class="header">
+
+        <!-- Botão do menu -->
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Abrir menu"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+
+        <!-- Logo -->
+        <a href="index.html" class="logo-link">
+            <img
+                src="assets/logo.png"
+                alt="Rare Nexus TCG"
+                class="logo"
+            >
+        </a>
+
+
+        <!-- Ações do usuário -->
+        <div class="header-actions">
+
+            <a href="#" aria-label="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="#" aria-label="Carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <a href="#" aria-label="Minha conta">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MENU LATERAL
+    ========================================== -->
+
+    <nav class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu-header">
+
+            <span>Menu</span>
+
+            <button
+                id="closeMenu"
+                aria-label="Fechar menu"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="mobile-menu-links">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Início</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Cartas</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-box"></i>
+                <span>Boosters</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gift"></i>
+                <span>Boxes</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-star"></i>
+                <span>Produtos em destaque</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Sobre nós</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contato</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Fundo escuro quando o menu estiver aberto -->
+    <div
+        class="menu-overlay"
+        id="menuOverlay"
+    ></div>
+
+
+    <!-- =========================================
+         CONTEÚDO PRINCIPAL
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =====================================
+             BANNER PRINCIPAL
+        ====================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-small-title">
+                    RARE NEXUS TCG
+                </span>
+
+                <h1>
+                    Seu universo Pokémon TCG começa aqui.
+                </h1>
+
+                <p>
+                    Encontre cartas e produtos de Pokémon TCG
+                    para aumentar sua coleção.
+                </p>
+
+                <a href="#" class="hero-button">
+                    Explorar produtos
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CATEGORIAS
+        ====================================== -->
+
+        <section class="categories">
+
+            <div class="section-title">
+
+                <span>Explore</span>
+
+                <h2>
+                    Categorias
+                </h2>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <!-- Categoria 1 -->
+
+                <a href="#" class="category-card">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <h3>
+                        Cartas
+                    </h3>
+
+                    <p>
+                        Encontre cartas para sua coleção.
+                    </p>
+
+                </a>
+
+
+                <!-- Categoria 2 -->
+
+                <a href="#" class="category-card">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+
+                    <h3>
+                        Boosters
+                    </h3>
+
+                    <p>
+                        Boosters para abrir e colecionar.
+                    </p>
+
+                </a>
+
+
+                <!-- Categoria 3 -->
+
+                <a href="#" class="category-card">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+
+                    <h3>
+                        Boxes
+                    </h3>
+
+                    <p>
+                        Produtos especiais e coleções.
+                    </p>
+
+                </a>
+
+
+                <!-- Categoria 4 -->
+
+                <a href="#" class="category-card">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>
+                        Destaques
+                    </h3>
+
+                    <p>
+                        Confira nossos produtos em destaque.
+                    </p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             PRODUTOS EM DESTAQUE
+        ====================================== -->
+
+        <section class="featured-products">
+
+            <div class="section-title">
+
+                <span>Confira</span>
+
+                <h2>
+                    Produtos em destaque
+                </h2>
+
+            </div>
+
+
+            <div class="products-grid">
+
+
+                <!-- Produto 1 -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">
+                            Destaque
+                        </span>
+
+                        <div class="product-placeholder">
+                            Produto
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Produto Pokémon TCG
+                        </h3>
+
+                        <p class="product-price">
+                            R$ 00,00
+                        </p>
+
+                        <button class="product-button">
+                            Comprar
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Produto 2 -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <div class="product-placeholder">
+                            Produto
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Produto Pokémon TCG
+                        </h3>
+
+                        <p class="product-price">
+                            R$ 00,00
+                        </p>
+
+                        <button class="product-button">
+                            Comprar
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Produto 3 -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <div class="product-placeholder">
+                            Produto
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Produto Pokémon TCG
+                        </h3>
+
+                        <p class="product-price">
+                            R$ 00,00
+                        </p>
+
+                        <button class="product-button">
+                            Comprar
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Produto 4 -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <div class="product-placeholder">
+                            Produto
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Produto Pokémon TCG
+                        </h3>
+
+                        <p class="product-price">
+                            R$ 00,00
+                        </p>
+
+                        <button class="product-button">
+                            Comprar
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             SOBRE A RARE NEXUS
+        ====================================== -->
+
+        <section class="about">
+
+            <div class="about-content">
+
+                <span>
+                    RARE NEXUS TCG
+                </span>
+
+                <h2>
+                    Feito para quem ama Pokémon TCG.
+                </h2>
+
+                <p>
+                    A Rare Nexus TCG nasceu com o objetivo de
+                    criar um espaço para colecionadores e
+                    apaixonados por Pokémon TCG.
+                </p>
+
+                <a href="#" class="about-button">
+                    Conheça a Rare Nexus
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             BENEFÍCIOS
+        ====================================== -->
+
+        <section class="benefits">
+
+            <div class="benefit">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+
+                    <h3>
+                        Compra segura
+                    </h3>
+
+                    <p>
+                        Segurança em sua experiência de compra.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <i class="fa-solid fa-box"></i>
+
+                <div>
+
+                    <h3>
+                        Envio cuidadoso
+                    </h3>
+
+                    <p>
+                        Produtos preparados com cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit">
+
+                <i class="fa-solid fa-star"></i>
+
+                <div>
+
+                    <h3>
+                        Paixão por TCG
+                    </h3>
+
+                    <p>
+                        Criado por quem gosta de colecionar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         RODAPÉ
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+
+            <div class="footer-brand">
+
+                <img
+                    src="assets/logo.png"
+                    alt="Rare Nexus TCG"
+                >
+
+                <p>
+                    Pokémon TCG para colecionadores
+                    e apaixonados.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Loja
+                </h3>
+
+                <a href="#">
+                    Cartas
+                </a>
+
+                <a href="#">
+                    Boosters
+                </a>
+
+                <a href="#">
+                    Boxes
+                </a>
+
+                <a href="#">
+                    Destaques
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Rare Nexus
+                </h3>
+
+                <a href="#">
+                    Sobre nós
+                </a>
+
+                <a href="#">
+                    Contato
+                </a>
+
+                <a href="#">
+                    Termos
+                </a>
+
+                <a href="#">
+                    Privacidade
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Rare Nexus TCG. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript principal -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
