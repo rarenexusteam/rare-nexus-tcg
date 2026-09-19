@@ -294,104 +294,176 @@ button {
 .hero {
     min-height: 520px;
 
+    position: relative;
+
     display: flex;
     align-items: center;
 
     padding: 80px 8%;
 
+    overflow: hidden;
+
     background:
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(255, 204, 0, 0.45),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(66, 165, 245, 0.35),
+            transparent 30%
+        ),
         linear-gradient(
             135deg,
-            #fff1a8,
-            #ffd84d 45%,
-            #7dd3fc
+            #fffdf0 0%,
+            #fff3a6 45%,
+            #dff4ff 100%
         );
-
-    position: relative;
-
-    overflow: hidden;
 }
 
 
-/* Decorações */
-
-.hero::before {
-    content: "";
-
-    position: absolute;
-
-    width: 300px;
-    height: 300px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.35);
-
-    top: -120px;
-    right: 5%;
-}
-
-.hero::after {
-    content: "";
-
-    position: absolute;
-
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.25);
-
-    bottom: -100px;
-    left: 8%;
-}
-
-
-/* Conteúdo */
+/* =========================================
+   CONTEÚDO DO BANNER
+========================================= */
 
 .hero-content {
     position: relative;
-    z-index: 2;
 
-    max-width: 650px;
+    z-index: 5;
+
+    max-width: 680px;
 }
 
 .hero-small-title {
     display: inline-block;
 
-    margin-bottom: 15px;
-
-    font-size: 14px;
-    font-weight: 800;
-
-    letter-spacing: 3px;
+    margin-bottom: 14px;
 
     color: #1769aa;
+
+    font-size: 14px;
+    font-weight: 900;
+
+    letter-spacing: 4px;
 }
 
 .hero h1 {
-    font-size: clamp(40px, 6vw, 72px);
-
-    line-height: 1.05;
-
     margin-bottom: 22px;
 
-    font-weight: 900;
-
     color: #171717;
+
+    font-size: clamp(42px, 6vw, 72px);
+
+    line-height: 1.02;
+
+    font-weight: 900;
 }
 
 .hero p {
-    max-width: 550px;
+    max-width: 570px;
 
     margin-bottom: 30px;
+
+    color: #444444;
 
     font-size: 18px;
 
     line-height: 1.6;
+}
 
-    color: #333333;
+
+/* =========================================
+   DECORAÇÕES
+========================================= */
+
+.hero-decoration {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Círculo amarelo */
+
+.hero-decoration-one {
+    width: 420px;
+    height: 420px;
+
+    right: -100px;
+    top: -100px;
+
+    background: rgba(255, 204, 0, 0.28);
+
+    border: 35px solid rgba(255, 255, 255, 0.35);
+}
+
+
+/* Círculo azul */
+
+.hero-decoration-two {
+    width: 280px;
+    height: 280px;
+
+    right: 18%;
+    bottom: -170px;
+
+    background: rgba(23, 105, 170, 0.15);
+
+    border: 25px solid rgba(255, 255, 255, 0.35);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE DO BANNER
+========================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 500px;
+
+        padding: 65px 25px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-small-title {
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-decoration-one {
+        width: 280px;
+        height: 280px;
+
+        right: -130px;
+        top: -80px;
+    }
+
+    .hero-decoration-two {
+        width: 200px;
+        height: 200px;
+
+        right: -60px;
+        bottom: -120px;
+    }
 }
 
 
