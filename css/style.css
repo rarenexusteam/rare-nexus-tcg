@@ -982,24 +982,78 @@ button {
 
 
 /* =========================================
-   SOBRE
+   SOBRE A RARE NEXUS
 ========================================= */
 
 .about {
-    padding: 100px 8%;
+    width: 100%;
+
+    position: relative;
+
+    padding: 110px 6%;
+
+    overflow: hidden;
 
     background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255, 204, 0, 0.25),
+            transparent 30%
+        ),
         linear-gradient(
             135deg,
             #1769aa,
-            #42a5f5
+            #2388d0
         );
 
     color: #ffffff;
 }
 
+
+/* Decoração */
+
+.about::before {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    right: -120px;
+    bottom: -170px;
+
+    border: 35px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 50%;
+}
+
+.about::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    left: -80px;
+    top: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 204, 0, 0.14);
+}
+
+
+/* Conteúdo */
+
 .about-content {
-    max-width: 800px;
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 850px;
 
     margin: 0 auto;
 
@@ -1007,39 +1061,91 @@ button {
 }
 
 .about-content > span {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #ffcc00;
+
     font-size: 13px;
+    font-weight: 900;
 
-    font-weight: 800;
-
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 .about h2 {
-    margin: 15px 0 20px;
+    margin-bottom: 22px;
 
-    font-size: clamp(32px, 5vw, 50px);
+    font-size: clamp(34px, 5vw, 54px);
 
-    line-height: 1.1;
+    line-height: 1.08;
+
+    font-weight: 900;
 }
 
 .about p {
-    max-width: 650px;
+    max-width: 700px;
 
-    margin: 0 auto 30px;
+    margin: 0 auto 32px;
 
-    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.90);
 
     font-size: 17px;
+
+    line-height: 1.7;
 }
 
+
+/* Botão */
+
 .about-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
     background: #ffcc00;
 
-    color: #222222;
+    color: #171717;
+
+    font-weight: 900;
+
+    transition: 0.25s ease;
 }
 
 .about-button:hover {
     background: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE — SOBRE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .about {
+        padding: 80px 20px;
+    }
+
+    .about h2 {
+        font-size: 34px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
 }
 
 
